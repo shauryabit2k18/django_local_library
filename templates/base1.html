@@ -1,0 +1,225 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Shaurya- Profile</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static "my_portfolio/img/core-img/favicon.png" %}">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static "my_portfolio/style.css" %}">
+
+</head>
+
+<body>
+    <!-- Preloader my_portfolio:index-->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader {% url 'my_portfolio:index' %}-->
+
+    <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close bg-img/5.jpg-->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+                        <!-- Form -->
+                        <form action="{% url 'search' %}">
+                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo "{% static "my_portfolio/img/core-img/AINOW1.png" %}"-->
+                        <a class="nav-brand" href="{% url 'my_portfolio:index' %}"><img src="{% static "my_portfolio/img/core-img/AINOW1.png" %}" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start "{% url 'my_portfolio:contact' %}"index-->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li class="active"><a href="{% url 'my_portfolio:index' %}">Home</a></li>
+                                    <li><a href="#">My Work</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{% url 'my_portfolio:gallery' %}">- Projects</a></li>
+                                            <li><a href="{% url 'my_portfolio:certi' %}">- Certificates</a></li>
+                                            <li><a href="{% url 'post-list' %}">- Blogs</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'post-create' %}" >Create</a></li>
+                                    <li><a href="{% url 'my_portfolio:about' %}" >About</a></li>
+                                    <li><a href="{% url 'my_portfolio:contact' %}">Contact</a></li>
+                                    <li><a href="{% static 'my_portfolio/resume.pdf' %}">Resume</a></li>
+                                </ul>
+
+                                <!-- Search Icon -->
+                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+
+    {% block content %}
+    {% endblock content %}
+
+    
+
+    <!-- Follow Area Start https://www.linkedin.com/in/shaurya-sinha-71890617b/-->
+    <section class="follow-area clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Follow Linkedin</h2>
+                        <a href = "https://www.linkedin.com/in/shaurya-sinha-71890617b/"><p>@Shaurya_Sinha</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Feed Area -->
+        <div class="instragram-feed-area owl-carousel">
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static "my_portfolio/img/bg-img/11.jpg" %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-github" aria-hidden="true"></i>
+                        <span>Shaurya_Sinha</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static "my_portfolio/img/bg-img/12.jpg" %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-github" aria-hidden="true"></i>
+                        <span>Shaurya_Sinha</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static "my_portfolio/img/bg-img/13.jpg" %}"alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-github" aria-hidden="true"></i>
+                        <span>Shaurya_Sinha</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static "my_portfolio/img/bg-img/14.jpg" %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-github" aria-hidden="true"></i>
+                        <span>Shaurya_Sinha</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static "my_portfolio/img/bg-img/15.jpg" %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-github" aria-hidden="true"></i>
+                        <span>Shaurya_Sinha</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static "my_portfolio/img/bg-img/16.jpg" %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="#">
+                        <i class="ti-github" aria-hidden="true"></i>
+                        <span>Shaurya_Sinha</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Follow Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                        
+                        <!-- Footer Logo "{% static "my_portfolio/img/core-img/AINOW1.png" %}"-->
+                        <div class="footer-logo">
+                            <a href="#"><img src="{% static "my_portfolio/img/core-img/AINOW1.png" %}" alt=""></a>
+                        </div>
+                        <!-- Social Info www.linkedin.com/in/shaurya-sinha-71890617b-->
+                        <div class="social-info">
+                            <a href="https://github.com/shauryabit2k18"><i class="ti-github" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-twitter-alt" aria-hidden="true"></i></a>
+                            <a href="www.linkedin.com/in/shaurya-sinha-71890617b"><i class="ti-linkedin" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-facebook" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 "{% static "my_portfolio/js/default-assets/active.js" %}"-->
+    <script src="{% static "my_portfolio/js/jquery.min.js" %}"></script>
+    <!-- Popper -->
+    <script src="{% static "my_portfolio/js/popper.min.js" %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static "my_portfolio/js/bootstrap.min.js" %}"></script>
+    <!-- All Plugins -->
+    <script src="{% static "my_portfolio/js/alime.bundle.js" %}"></script>
+    <!-- Active -->
+    <script src="{% static "my_portfolio/js/default-assets/active.js" %}"></script>
+
+</body>
+
+</html>

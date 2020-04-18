@@ -1,0 +1,193 @@
+{% extends 'my_portfolio/base.html' %}
+
+    {% block content %}
+    {% load static %}
+
+    <!-- Breadcrumb Area Start {% static 'my_portfolio/img/bg-img/108.jpg' %}-->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'my_portfolio/img/bg-img/108.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="page-title">About Me</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="{% url 'my_portfolio:index' %}"><i class="icon_house_alt"></i> Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">About</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+
+    <!-- About Us Area Start {% static 'my_portfolio/img/bg-img/108.jpg' %}-->
+    <div class="about-us-area section-padding-80-0 clearfix">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="about-us-content mb-80">
+                        <h3 class="wow fadeInUp" data-wow-delay="100ms">CODE . COFFEE . REPEAT</h3>
+                        <div class="line wow fadeInUp" data-wow-delay="200ms"></div>
+                        <p class="wow fadeInUp" data-wow-delay="300ms">I am passionate about building excellent software , websites and applications that improves the lives of those around me. I specialize in creating software that intigrates Machine learning and Web-Development. </p>
+                        <p class="wow fadeInUp" data-wow-delay="400ms">I am most fluent in Python based applications and Tensorflow . All of my work is produced locally from India. What would you do if you had a software developer available at your fingertips?</p>
+                        <a class="btn alime-btn btn-2 mt-30 wow fadeInUp" data-wow-delay="500ms" href="{% url 'my_portfolio:contact' %}">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-video-area mb-80 wow fadeInUp" data-wow-delay="100ms">
+                        <img src="{% static 'my_portfolio/img/bg-img/17.jpg' %}" alt="">
+                        <div class="video-icon">
+                            <a href="https://www.youtube.com/watch?v=sSakBz_eYzQ" class="video-play-btn"><i class="arrow_triangle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Area End -->
+
+    <!-- Why Choose Us Area Start -->
+    <section class="why-choose-us-area bg-gray section-padding-80-0 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h2>Why Choose Me</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Why Choose Area -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa fa-film" aria-hidden="true"></i>
+                        </div>
+                        <h4>Tailored To Your Needs</h4>
+                        <p>The entire application will be tailored to your needs and requirements as like i always say the client is my eyes and their vision is my blueprint to build up for them.</p>
+                    </div>
+                </div>
+
+                <!-- Single Why Choose Area -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </div>
+                        <h4>Pixel-Perfect Code</h4>
+                        <p>The entire code will be well documented for future reuseability and will be regularly tested , updated , patched and maintained to make it bug free</p>
+                    </div>
+                </div>
+
+                <!-- Single Why Choose Area -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="chosse-us-icon">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <h4>Made With Love</h4>
+                        <p>Each application , Website , etc. is made with love so that using the application is more of an experience to be felt rather than being tedious. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose  us Area End -->
+
+    <!-- Our Team Area Start -->
+    <section class="our-team-area section-padding-80-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h2>My Specializations</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="member-thumb">
+                            <img src="{% static 'my_portfolio/img/bg-img/89.png' %}" alt="">
+                        </div>
+                        <h5>DeepLearning</h5>
+                        <span>Coursera-DeepLearning.ai</span>
+                        <div class="member-social-info">
+                            <!-- <a href="#"><i class="ti-facebook"></i></a> -->
+                            <!-- <a href="#"><i class="ti-twitter-alt"></i></a>-->
+                            <a href="#"><i class="ti-id-badge"></i></a>
+                            <!-- <a href="#"><i class="ti-pinterest"></i></a>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="member-thumb">
+                            <img src="{% static 'my_portfolio/img/bg-img/90.jpg' %}" alt="">
+                        </div>
+                        <h5>MachineLearning</h5>
+                        <span>Coursera-Stanford</span>
+                        <div class="member-social-info">
+                            <!-- <a href="#"><i class="ti-facebook"></i></a> -->
+                            <!-- <a href="#"><i class="ti-twitter-alt"></i></a>-->
+                            <a href="#"><i class="ti-id-badge"></i></a>
+                            <!-- <a href="#"><i class="ti-pinterest"></i></a>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="member-thumb">
+                            <img src="{% static 'my_portfolio/img/bg-img/91.png' %}" alt="">
+                        </div>
+                        <h5>Explore ML</h5>
+                        <span>Google</span>
+                        <div class="member-social-info">
+                            <!-- <a href="#"><i class="ti-facebook"></i></a> -->
+                            <!-- <a href="#"><i class="ti-twitter-alt"></i></a>-->
+                            <a href="#"><i class="ti-id-badge"></i></a>
+                            <!-- <a href="#"><i class="ti-pinterest"></i></a>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="700ms">
+                        <div class="member-thumb">
+                            <img src="{% static 'my_portfolio/img/bg-img/92.jpg' %}" alt="">
+                        </div>
+                        <h5>DL&ML A-Z</h5>
+                        <span>Udemy</span>
+                        <div class="member-social-info">
+                            <!-- <a href="#"><i class="ti-facebook"></i></a> -->
+                            <!-- <a href="#"><i class="ti-twitter-alt"></i></a>-->
+                            <a href="#"><i class="ti-id-badge"></i></a>
+                            <a href="#"><i class="ti-id-badge"></i></a>
+                            <!-- <a href="#"><i class="ti-pinterest"></i></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
+                    <a href="{% url 'my_portfolio:certi' %}" class="btn alime-btn btn-2 mt-15">View More</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Our Team Area End -->
+
+    {% endblock content %}

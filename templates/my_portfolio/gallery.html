@@ -1,0 +1,975 @@
+{% extends 'my_portfolio/base.html' %}
+
+    {% block content %}
+    {% load static %}
+
+
+    <!-- Breadcrumb Area Start {% static 'my_portfolio/img/bg-img/38.jpg' %}-->
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'my_portfolio/img/bg-img/108.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="page-title">Projects</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="/"><i class="icon_house_alt"></i> Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Projects</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+    <br><br>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= "{% static "my_portfolio/css1/main.css" %}"-->
+    <link rel="stylesheet" href="{% static "my_portfolio/css1/linearicons.css" %}">
+    <link rel="stylesheet" href="{% static "my_portfolio/css1/font-awesome.min.css" %}">
+    <link rel="stylesheet" href="{% static "my_portfolio/css1/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "my_portfolio/css1/magnific-popup.css" %}">
+    <link rel="stylesheet" href="{% static "my_portfolio/css1/jquery-ui.css" %}">
+    <link rel="stylesheet" href="{% static "my_portfolio/css1/nice-select.css" %}">
+    <link rel="stylesheet" href="{% static "my_portfolio/css1/animate.min.css" %}">
+    <link rel="stylesheet" href="{% static "my_portfolio/css1/main.css" %}">
+    <center><div class="col-10 ">
+      <div class="row post-preview">
+          <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+            <a href="{% url "coco"%}" target="_blank">
+            <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/74.png" %}">
+          </a>
+          </div>
+
+          <div class="col-lg-9 col-md-9 col-xs-9">
+            <h2 class="post-title">
+              <a href="{% url "coco"%}" target="_blank">
+              Website for Object Detection using Single Shot Detection (Tensorflow.js)
+            </a>
+
+            </h2>
+          <p>
+            Deployed a static website for Object Detection using COCO dataset with over 40 diffrent labels. The front end is made using React.And the architecture used is SSD(single shot detection).
+                    </p>
+
+          <p class="post-meta">
+            Shaurya Sinha</p>
+        </div>
+      </div>
+
+      <hr>
+
+    <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/artificial_intelligence/module1" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/200.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/artificial_intelligence/module1" target="_blank">
+            AI to solve any Sudoku (Python)
+          </a>
+
+          </h2>
+        <p>Used diffrent search algorithims A*Search and Depth First Search (DFS) , to create an AI that can solve any Sudoku.             </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+    <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/artificial_intelligence/module%202" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/300.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/artificial_intelligence/module%202" target="_blank">
+            AI to play ISOLATION Game (Python)
+          </a>
+
+          </h2>
+        <p>
+      A game playing adversarial agent that uses MinMax Algo with Alpha Beta Pruning as optimizer with three evaluating functions.            </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/GAN-s-for-ART-master" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/400.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/GAN-s-for-ART-master" target="_blank">
+            Generative Adverserial Networks(GANs) (Tensorflow)
+          </a>
+
+          </h2>
+        <p>
+      Using Generative Adverserial Networks(GANs) to generate MNIST and Fashion-MNIST Data and a short descripthon of how GANs work.            </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/deep_learning_udacity/CNN" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/500.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/deep_learning_udacity/CNN" target="_blank">
+            CIFAR10 dataset image classification and Dog breed classification (Tensorflow)
+          </a>
+
+          </h2>
+        <p>
+      Using DeepLearning to categorize 10 categories in CIFAR10 dataset and using VGG16 architecture to categorise the breed of a Dog.            </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/blob/master/deep%20learning%20projects/deep_learning_udacity/NLP/RNN_LSTMs.ipynb" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/600.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/blob/master/deep%20learning%20projects/deep_learning_udacity/NLP/RNN_LSTMs.ipynb" target="_blank">
+            [NLP] Generating Story Paragraphs from Initial Word Using RNN and LSTMS (Tensorflow)
+          </a>
+
+          </h2>
+        <p>
+      Generating ANNA text paragraphs using Books and Novels from the word "Farcied her" we got a long paragraph almost perfect with puctuations.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/blob/master/deep%20learning%20projects/deep_learning_udacity/NLP/Skip_Gram_word2vec.ipynb" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/700.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/blob/master/deep%20learning%20projects/deep_learning_udacity/NLP/Skip_Gram_word2vec.ipynb" target="_blank">
+            [NLP] Skip Gram Word2Vec (Tensorflow)
+          </a>
+
+          </h2>
+        <p>
+      Implementing word2vec in tensorflow to group together word with similar meaning or some relations in a pattern in 2-D space.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+      
+    
+
+    <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/deep_learning_udacity/auto%20encoders" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/800.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/deep_learning_udacity/auto%20encoders" target="_blank">
+            [CNN] Autoencoders and Denoising Convolutional Auto Encoders (Tensorflow)
+          </a>
+
+          </h2>
+        <p>
+      Implementing a Simple Autoencoder , Convolutional Autoencoder and Denoising Convolutional Autoencoder in Tensorflow.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/deeplearning.ai" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/900.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/deeplearning.ai" target="_blank">
+            Deep Leaning Specialization (Tensorflow)
+          </a>
+
+          </h2>
+        <p>
+      Completed my Deep Learning Specialization from Coursera by DeepLearning.ai all the related code is here.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/flower_detection_Transfer_learningVGG16-master" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1000.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/flower_detection_Transfer_learningVGG16-master" target="_blank">
+            [CNN]Flower Detection (Tensorflow)
+          </a>
+
+          </h2>
+        <p>
+      Detection of 5 types flowers in a picture, where the model is trained using Transfer-Learning on pre-trained VGG-16 architecture.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/super-resolution-master" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1100.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/deep%20learning%20projects/super-resolution-master" target="_blank">
+            [CNN]Super Resoution (PyTorch)
+          </a>
+
+          </h2>
+        <p>
+      Super-Resolution Generative Adversarial Network (SRGAN) to convert Low Resolution pics into detailed High Resolution pictures.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/Computer%20Vision%20Basics" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1200.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/Computer%20Vision%20Basics" target="_blank">
+            [CV]Computer Vision based small Projects (Computer Vision)
+          </a>
+
+          </h2>
+        <p>
+      Green and Blue screen implementation , day night classifier , gausian blur , fourier tranformations , HSV color scace and RGB color space.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/Computer%20Vision%20Basics/cv%20face%20%2C%20mouth%20and%20eye%20recognition" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1300.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/Computer%20Vision%20Basics/cv%20face%20%2C%20mouth%20and%20eye%20recognition" target="_blank">
+            [CV]Face Recognition (Computer Vision)
+          </a>
+
+          </h2>
+        <p>
+      Using Computer Vision for face , mouth and eyes recognition for more than one face also.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/Computer%20Vision%20Basics/Single%20Shot%20detection(SSD)" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1400.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/Computer%20Vision%20Basics/Single%20Shot%20detection(SSD)" target="_blank">
+            [CNN] Single Shot Detection(SSD) (Tensorflow)
+          </a>
+
+          </h2>
+        <p>
+      Using single shot detection(SSD) to detect humans and dogs in any video.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/Coursera_Machine_Learning_Matlab" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1500.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/Coursera_Machine_Learning_Matlab" target="_blank">
+            Machine Learning - Stanford -Coursera (Matlab)
+          </a>
+
+          </h2>
+        <p>
+      Learning the basics of Machine Learning from Coursera Machine Learning Stanford Andrew-ng.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/Churn_Modelling_ANN" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1600.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/Churn_Modelling_ANN" target="_blank">
+            [ANN]Churn Modelling (Keras)
+          </a>
+
+          </h2>
+        <p>
+      Analysing the Churn Modelling dataset to predict if a customer will leave a bank or not using Artificial Neural Networks(ANN).      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/K-means%20clustering" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1700.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/K-means%20clustering" target="_blank">
+            [ALGO.]K-Means Clustering (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Clustering Mall customers using K-means clustering on the basis of gender age income and spending-score.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/KNN" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1800.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/KNN" target="_blank">
+            [ALGO.]K - Nearest Neighbours (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Analysing and Clustering customers for likeliness to click on a Social Network Ad using KNN on the basis of their gender , age and salary.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/blob/master/machine%20learning%20projects/MACHINE_LEARNING/NLP/natural_language_processing1.py" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1900.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/blob/master/machine%20learning%20projects/MACHINE_LEARNING/NLP/natural_language_processing1.py" target="_blank">
+            [NLP]Sentiment analysis(Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Sentiment analysis of diffrent Restraunt reviews using NLP.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/RNN" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2000.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/RNN" target="_blank">
+            [RNN]Predicting Stock Prices (Keras)
+          </a>
+
+          </h2>
+        <p>
+      Predicting the future Stock Prices using Google Stock Price dataset using Recurrent Neural Nets(RNN).      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/Recommender%20System%20using%20RBM" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2100.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/Recommender%20System%20using%20RBM" target="_blank">
+            [RBM]Recommender System Using Restricted Boltzmann Machine (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Making a recommender syster using RBM and 1,000,209 anonymous ratings of approximately 3,900 movies 
+made by 6,040 MovieLens users who joined MovieLens in 2000.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/Types%20of%20Regression/logistic%20regression" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1800.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/Types%20of%20Regression/logistic%20regression" target="_blank">
+            [ALGO.]Logistic Regression (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Using logistic regression to predict if a person will click the  social network ads or not.       </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/Types%20of%20Regression/multiple%20linear%20regression" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2200.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/Types%20of%20Regression/multiple%20linear%20regression" target="_blank">
+            [ALGO.]Multiple Linear Regression (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Using Multiple Linear Regression to Predict Revenues of a Startup from its Spendings in R&D , market , admiistration spending and loction.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/Types%20of%20Regression/polynomial%20regression" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2300.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/Types%20of%20Regression/polynomial%20regression" target="_blank">
+            [ALGO.]Polynomial Regression (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Predicting the salary of a employee by their position and experience using Polynomial Regression.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/apriori" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2400.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/apriori" target="_blank">
+            [ALGO.]Market Basket Optimization (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Predicting what items go together in a market basket using apriori algorithm.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/decision_tree/regression" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2300.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/decision_tree/regression" target="_blank">
+            [ALGO.]Regression Decision Tree (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Using Regression Decision Tree to predict salaries using the experience and positon of a employee.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/decision_tree/classification" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1800.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/decision_tree/classification" target="_blank">
+            [ALGO.]Classification Decision Tree (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Using Classification Decision Trees to predict if a person will click the  social network ads or not.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/hierarchichal%20clustering" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1700.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/hierarchichal%20clustering" target="_blank">
+            [ALGO.]Hierarchichal Clustering (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Using Hierarchichal Clustering to categorise mall customers according to their gender , age , inclome and spending score and analysing it.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/identifying%20frauds%20with%20SOM" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2500.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/identifying%20frauds%20with%20SOM" target="_blank">
+            [SOM]Credit Card Spam using Self Organizing Maps(SOM) (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Predicting Credit Card Frauds using Self Organizing Maps(SOM) clustering algorithim using 14 diffrent attributes.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/imdb%20analysis" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2600.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/imdb%20analysis" target="_blank">
+            [NLP]IMDB Sentiment Analysis (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Analysing Sentiments from the comments on IMDB using random forest classifier.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/naive%20bayes" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1800.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/naive%20bayes" target="_blank">
+            [ALGO.]Naive Bayes (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Analysing data using navive bayes algorithm to predict if a person will click a advertisement or not.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/random%20forest/classification" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1800.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/random%20forest/classification" target="_blank">
+            [ALGO.]Random Forest Classifier (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Analysing data using Random Forest Classification algorithm to predict if a person will click a advertisement or not.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/random%20forest/regression" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2300.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/random%20forest/regression" target="_blank">
+            [ALGO.]Random Forest Regressor (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Using Random Forest Regression algorithm to predict salaries using the experience and positon of a employee.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/svm/SVR" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2300.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/svm/SVR" target="_blank">
+            [SVM]Support Vector Machine (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Using Support Vector Machine algorithm to predict salaries using the experience and positon of a employee.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/1800.png" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="" target="_blank">
+            [SVM]Kernel Support Vector Machine (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Analysing data using Kernel Support Vector Machine algorithm to predict if a person will click a advertisement or not.       </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/thompson%20sampling" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2700.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/thompson%20sampling" target="_blank">
+            [ALGO.]Thompson Sampling (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Using Thompson Sampling  algorithm to predict mobile Ads Click-Through Rate(CTR) ie.clicks advertisers receive on their ads per number of impressions.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/upper%20confidence%20bound" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2700.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="https://github.com/shauryabit2k18/machine_learning_main/tree/master/machine%20learning%20projects/MACHINE_LEARNING/upper%20confidence%20bound" target="_blank">
+            [ALGO.]Upper Confidence Bound (Sk-learn)
+          </a>
+
+          </h2>
+        <p>
+      Using Upper Confidence Bound algorithm to predict mobile Ads Click-Through Rate(CTR) ie.clicks advertisers receive on their ads per number of impressions.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+      <div class="row post-preview">
+        <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+          <a href="" target="_blank">
+          <img class="portfolio-photo" src="{% static "my_portfolio/img/bg-img/2900.jpg" %}">
+        </a>
+        </div>
+
+        <div class="col-lg-9 col-md-9 col-xs-9">
+          <h2 class="post-title">
+            <a href="" target="_blank">
+            [Tf]MNIST-fashion and Tf.Hellowworld Serving (Tensorflow Serving)
+          </a>
+
+          </h2>
+        <p>
+      Serving Tensorflow Models using Tensorflow Serving.      </p>
+
+        <p class="post-meta">
+          Shaurya Sinha</p>
+      </div>
+      </div>
+
+      <hr>
+    </div></center>
+      <br><br>
+    {% endblock content %}

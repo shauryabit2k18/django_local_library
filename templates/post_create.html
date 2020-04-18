@@ -1,0 +1,62 @@
+
+{% extends 'base1.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% if request.user.is_authenticated %}
+        {% if request.user.is_superuser %}
+                <br><br><br><br><br>
+                <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+                <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
+                <link rel="stylesheet" href="{% static 'css/fontastic.css' %}">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+                <link rel="stylesheet" href="{% static 'vendor/@fancyapps/fancybox/jquery.fancybox.min.css' %}">
+                <link rel="stylesheet" href="{% static 'css/style.default.css' %}" id="theme-stylesheet">
+                <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+                <link rel="shortcut icon" href="{% static 'favicon.png' %}">
+
+                <link href='{% static "styles/github.css" %}' rel="stylesheet">
+
+                <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+                    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+                    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+                    <br><br>
+
+            <div class="col-4 offset-4">
+            <form method="POST" action="." enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|crispy}}
+                <button type="submit">Submit</button>
+            </form>
+
+            </div>
+
+                <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+            <script src="{% static 'vendor/popper.js/umd/popper.min.js' %}"> </script>
+            <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+            <script src="{% static 'vendor/jquery.cookie/jquery.cookie.js' %}"> </script>
+            <script src="{% static 'vendor/@fancyapps/fancybox/jquery.fancybox.min.js' %}"></script>
+            <script src="{% static 'js/front.js' %}"></script>
+
+            <script src='{% static "js/highlight.pack.js" %}'></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+        {% endif %}
+    <br><br><br><br><br>
+
+    <center>Only super user can create , update and delete posts. Continue to read more blogs.</center>
+    <div class="row">
+        <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
+            <a href="{% url "post-list" %}" class="btn alime-btn btn-2 mt-15">Return to Blog</a>
+        </div>
+    </div>
+    <br><br>
+    {% else %}
+        <br><br><br>
+        <div class="row">
+            <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
+                <a href="{{ login_url }}" class="btn alime-btn btn-2 mt-15">Login</a>
+            </div>
+        </div>
+        <br><br>
+{% endif %}
+{% endblock content %}
