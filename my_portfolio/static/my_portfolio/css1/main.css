@@ -25,7 +25,7 @@ Created:
 6.  Department Page Style
 7.  Blog Page Style
 8.  Contact Page Style
-9.  Footer Style
+9.  Footer Styleelements/success-check.png
 
 -------------------------------------------------------------------*/
 /* =================================== */
@@ -1740,10 +1740,7 @@ $black			: #222;
     border: 1px solid #f1f1f1;
   }
   
-  .primary-checkbox input:checked + label {
-    background: url(../img/elements/primary-check.png) no-repeat center center/cover;
-    border: none;
-  }
+
   
   .confirm-checkbox {
     width: 16px;
